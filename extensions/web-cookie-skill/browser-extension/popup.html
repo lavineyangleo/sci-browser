@@ -2,5 +2,5 @@
 <body><header><img src="assets/icon-128.png" alt="" width="38" height="38"><div><h1>sci-cookie</h1><p>网页 Cookie · 读取与本地快照</p></div></header>
 <main><label for="url">当前网页</label><input id="url" type="url" placeholder="https://目标网站/" spellcheck="false"><div class="buttons"><button id="read">读取 Cookie</button><button id="export" disabled>导出 JSON</button></div>
 <div class="options"><label><input id="reveal" type="checkbox">显示完整值</label><label><input id="watch" type="checkbox">每 5 秒刷新</label></div>
-<p id="status" role="status" aria-live="polite">打开网页后，点击读取 Cookie。</p><section id="list" aria-label="Cookie 列表"></section>
-<p class="note">包含 HttpOnly。默认隐藏完整值；导出文件包含完整 Cookie，仅保存到你选择的本地位置。</p></main><script type="module" src="ui/popup-读取-v1.js"></script></body></html>
+<p id="status" role="status" aria-live="polite">打开网页后，点击读取 Cookie。</p><details><summary>登录信号与环境比较</summary><label for="authenticated">已登录页面的 CSS 选择器（可选）</label><input id="authenticated" placeholder="输入网站实际的账户菜单选择器"><label for="unauthenticated">未登录页面的 CSS 选择器（可选）</label><input id="unauthenticated" placeholder="输入网站实际的登录表单选择器"><label for="baseline">选择旧快照比较环境（不导入 Cookie）</label><input id="baseline" type="file" accept=".json,application/json"></details><p id="environment" style="white-space:pre-wrap" aria-live="polite"></p><section id="list" aria-label="Cookie 列表"></section>
+<p class="note">包含 HttpOnly。默认隐藏完整值；导出文件包含完整 Cookie，仅保存到你选择的本地位置。</p></main><script type="module" src="ui/popup-读取-v2.js"></script></body></html>

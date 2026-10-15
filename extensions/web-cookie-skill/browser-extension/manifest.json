@@ -1,12 +1,14 @@
 {
   "manifest_version": 3,
   "name": "sci-cookie",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "读取当前网页 Cookie，脱敏查看并导出 web-cookie-skill 兼容快照。",
   "permissions": [
     "cookies",
     "activeTab",
-    "downloads"
+    "downloads",
+    "scripting",
+    "storage"
   ],
   "host_permissions": [
     "http://*/*",

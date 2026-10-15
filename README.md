@@ -55,3 +55,12 @@ py -3.12 -m venv extensions/browser-paper-download/venv-3.12
 此目录没有复制账号密码、代理节点、本地认证令牌、Cookie、个人浏览器资料、虚拟环境、下载论文、CRX 或私钥。初始化产生的配置由 .gitignore 排除。历史脚本与旧 UI 文件未带入，仅保留当前引用链所需文件。
 
 源码已发布到用户指定的 GitHub 仓库 main 分支。浏览器及 Mihomo 二进制需要另行准备；若未来发布二进制，需保留其上游许可证及源码提供义务，见 [第三方说明](docs/第三方与运行依赖.md)。本仓库尚未给项目自有代码指定统一开源许可证。
+
+## Playwright 自动化与 Cookie 环境关联
+
+- 统一入口：scripts/playwright-会话自动化-v1.ps1，支持 open / collect / snapshot / check / download。
+- 独立持久 profile 管理 Cookie 与浏览器存储，代理选择按环境保存。
+- sci-cookie 2.0 记录实际环境、生成摘要、比较历史快照；登录识别依据用户配置的可见页面信号，无证据时返回 unknown。
+- 既有论文队列下载继续使用 papers-论文下载-v1.ps1。
+
+详见 [使用说明](docs/自动化与Cookie环境说明.md)。环境记录不伪造指纹，也不保证跨设备恢复登录。
