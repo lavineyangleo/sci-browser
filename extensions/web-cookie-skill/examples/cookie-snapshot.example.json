@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "sourceUrl": "https://example.com",
+  "capturedAt": "2026-09-26T12:00:00Z",
+  "cookies": [
+    {
+      "name": "session_id",
+      "value": "example-secret-value",
+      "domain": ".example.com",
+      "path": "/",
+      "expires": null,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax",
+      "session": true,
+      "partitionKey": null
+    }
+  ]
+}

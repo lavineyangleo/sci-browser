@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>sci-cookie</title><link rel="stylesheet" href="ui/style-界面-v1.css"></head>
+<body><header><img src="assets/icon-128.png" alt="" width="38" height="38"><div><h1>sci-cookie</h1><p>网页 Cookie · 读取与本地快照</p></div></header>
+<main><label for="url">当前网页</label><input id="url" type="url" placeholder="https://目标网站/" spellcheck="false"><div class="buttons"><button id="read">读取 Cookie</button><button id="export" disabled>导出 JSON</button></div>
+<div class="options"><label><input id="reveal" type="checkbox">显示完整值</label><label><input id="watch" type="checkbox">每 5 秒刷新</label></div>
+<p id="status" role="status" aria-live="polite">打开网页后，点击读取 Cookie。</p><section id="list" aria-label="Cookie 列表"></section>
+<p class="note">包含 HttpOnly。默认隐藏完整值；导出文件包含完整 Cookie，仅保存到你选择的本地位置。</p></main><script type="module" src="ui/popup-读取-v1.js"></script></body></html>

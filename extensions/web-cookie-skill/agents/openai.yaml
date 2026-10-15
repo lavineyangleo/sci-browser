@@ -1,0 +1,16 @@
+interface:
+  display_name: web cookie skill
+  short_description: '本 Skill 用于识别网页 Cookie、将 Cookie 保存为本地 JSON 快照，并让已保存快照按浏览器当前状态自动更新。
+
+    当用户需要读取网页 Cookie、保存 Cookie、同步 Cookie 或持续跟踪 Cookie 变化时触发。
+
+    触发词："识别cookie"、"读取cookie"、"保存cookie"、"同步cookie"、"更新cookie"'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

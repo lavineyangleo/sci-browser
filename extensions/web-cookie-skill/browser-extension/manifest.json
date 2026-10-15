@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "sci-cookie",
+  "version": "1.0.0",
+  "description": "读取当前网页 Cookie，脱敏查看并导出 web-cookie-skill 兼容快照。",
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "sci-cookie · 获取网页 Cookie",
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon-128.png"
+  },
+  "icons": {
+    "128": "assets/icon-128.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5nF1GwdG/qwKi65HgDf8HBr6J8/2sZ82soFJ6va2wM5gMli19UFxl/uNjsPRQ2ZSwLyJn1JeZrlOmQyHYoExDAB3prBkJOtN4f8uSlwO7fqFVmc4BpJO4UeCFkzE3HPBbAgmW9J9LqIw51E5sJ9XvE2vpVJ66+B5KiKySs803Jnid70MkvKEYQNY61JhSVkzwmD4Axl/ZuYlD3waj5cN2tl+4wlnTyWaV8CacL+erlv2hqBrrq4KIbAuiECt1v71Uy/PuoPY3UqK+ZW3AF9Aa1GRyj3x9PXSV0Uxn7vmsvwwH+S5XfJ2Tf7fymCegItsGGm5TV6iMwyhyba5oMdWTQIDAQAB"
+}

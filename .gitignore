@@ -1,0 +1,35 @@
+# Local credentials and user data
+config/*
+!config/README.md
+profiles/
+papers/
+cookies/
+queue.json
+**/.cookie-profile/
+**/cookies/
+services/mihomo/settings.json
+services/mihomo/state.json
+services/mihomo/state.tmp
+services/mihomo/candidate.json
+services/mihomo/runtime/
+extensions/sci-proxy/local-token.js
+# Runtime dependencies and build outputs
+runtime/*
+!runtime/README.md
+services/mihomo/core/*
+!services/mihomo/core/README.md
+*.exe
+*.dll
+*.crx
+*.pem
+*.key
+*.pfx
+*.p12
+**/venv-3.12/
+**/__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+!.env.example
+archive/

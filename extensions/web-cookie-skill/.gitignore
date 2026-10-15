@@ -1,0 +1,5 @@
+.cookie-profile/
+cookies/
+*.cookie.json
+__pycache__/
+.pytest_cache/
