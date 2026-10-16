@@ -4,6 +4,8 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $tool = Join-Path $root 'extensions\web-cookie-skill'
 $python = Join-Path $tool 'venv-3.12\Scripts\python.exe'
+$portable = Join-Path (Split-Path -Parent $PSScriptRoot) 'runtime/python/python.exe'
+if (Test-Path -LiteralPath $portable) { $python = $portable }
 if (-not (Test-Path -LiteralPath $python)) { throw 'Cookie tool environment missing.' }
 if (-not $ToolArguments -or $ToolArguments -contains '--help' -or $ToolArguments -contains '-h') {
     & $python (Join-Path $tool 'scripts\cookie_tool.py') @ToolArguments --help

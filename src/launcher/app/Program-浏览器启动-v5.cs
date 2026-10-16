@@ -14,6 +14,7 @@ namespace SciBrowser.App {
             string root = AppDomain.CurrentDomain.BaseDirectory;
             bool check = Array.IndexOf(args, "--check") >= 0;
             try {
+                PortableConfig.Initialize(root);
                 string parameters = LaunchConfig.Arguments(root);
                 string browser = LaunchConfig.FindBrowser(root, Application.ExecutablePath);
                 if (browser == null && !check) {

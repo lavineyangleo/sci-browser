@@ -33,3 +33,5 @@ services/mihomo/core/*
 .env.*
 !.env.example
 archive/
+release-build/
+dist/

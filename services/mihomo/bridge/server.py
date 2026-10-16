@@ -8,7 +8,7 @@ import threading
 import time
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from services.exit_probe import probe_exit
+from services.mihomo.bridge.services.exit_probe import probe_exit
 
 ROOT = Path(__file__).resolve().parents[1]
 SETTINGS = json.loads((ROOT / 'settings.json').read_text(encoding='utf-8'))

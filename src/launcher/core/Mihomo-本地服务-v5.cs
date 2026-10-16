@@ -37,8 +37,11 @@ namespace SciBrowser.Core {
                 catch (SocketException) { }
                 if (tcp.Connected) throw new Exception("本地管理端口 17896 已被占用或认证失败，请检查现有 Mihomo 服务。");
             }
-            var process = Process.Start(new ProcessStartInfo("py.exe", "-3.12 " + LaunchConfig.Quote(Path.Combine(directory, "bridge", "server.py"))) {
-                WorkingDirectory = directory, UseShellExecute = false, CreateNoWindow = true, WindowStyle = ProcessWindowStyle.Hidden
+            string python = Path.Combine(root, "runtime", "python", "python.exe");
+            string prefix = File.Exists(python) ? "" : "-3.12 ";
+            if (!File.Exists(python)) python = "py.exe";
+            var process = Process.Start(new ProcessStartInfo(python, prefix + "-m services.mihomo.bridge.server") {
+                WorkingDirectory = root, UseShellExecute = false, CreateNoWindow = true, WindowStyle = ProcessWindowStyle.Hidden
             });
             for (int i = 0; i < 30; i++) {
                 if (Healthy(token)) return;

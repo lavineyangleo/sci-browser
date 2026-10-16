@@ -64,3 +64,9 @@ py -3.12 -m venv extensions/browser-paper-download/venv-3.12
 - 既有论文队列下载继续使用 papers-论文下载-v1.ps1。
 
 详见 [使用说明](docs/自动化与Cookie环境说明.md)。环境记录不伪造指纹，也不保证跨设备恢复登录。
+
+## Windows 完整版下载
+
+可运行便携包在 [GitHub Releases](https://github.com/lavineyangleo/sci-browser/releases/latest)。下载 Windows x64 ZIP，完整解压后双击 sci-browser.exe；包内已包含 Python、Playwright、Chromium 和 Mihomo，首次运行自动初始化本机配置。
+
+源码仓库继续保持轻量，不存放二进制及个人数据。详见 [Windows 完整版使用说明](docs/Windows完整版使用说明.md)。
